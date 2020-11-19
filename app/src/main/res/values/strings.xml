@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">My Avatar</string>
+    <string name="floating_button_description">Create new avatar</string>
+    <string name="avatar_image_content_description">Avatar image</string>
+    <string name="gender_male">male</string>
+    <string name="gender_female">female</string>
+    <string name="race_human">human</string>
+    <string name="race_elf">elf</string>
+    <string name="race_hobbit">hobbit</string>
+    <string name="race_dwarf">dwarf</string>
+    <string name="profession_fighter">fighter</string>
+    <string name="profession_ranger">ranger</string>
+    <string name="profession_wizard">wizard</string>
+    <string name="profession_miner">miner</string>
+    <string name="profession_smithy">smithy</string>
+
+    <string name="dialog_ok_button">OK</string>
+    <string name="dialog_cancel_button">Cancel</string>
+    <string name="dialog_name_title">Type a name</string>
+    <string name="name_hint">Name</string>
+    <string name="name_empty_error_message">You should enter a valid name</string>
+</resources>
