@@ -23,4 +23,6 @@
     <string name="gender_empty_error_message">Please choose gender for your avatar</string>
     <string name="dialog_race_title">Choose a race</string>
     <string name="race_empty_error_message">Please choose a race for your avatar</string>
+    <string name="dialog_profession_title">Choose a profession</string>
+    <string name="profession_empty_error_message">Please choose a profession for your avatar</string>
 </resources>

@@ -18,10 +18,12 @@
     <string name="dialog_ok_button">Aceptar</string>
     <string name="dialog_cancel_button">Cancelar</string>
     <string name="dialog_name_title">Introduce un nombre</string>
-    <string name="name_hint">Name</string>
+    <string name="name_hint">Nombre</string>
     <string name="name_empty_error_message">Introduce un nombre válido</string>
     <string name="dialog_gender_title">Elige el sexo</string>
     <string name="gender_empty_error_message">Por favor, selecciona un sexo para tu avatar</string>
     <string name="dialog_race_title">Selecciona una especie</string>
     <string name="race_empty_error_message">Por favor, selecciona la especie de tu avatar</string>
+    <string name="dialog_profession_title">Elige una profesión</string>
+    <string name="profession_empty_error_message">Por favor, selecciona una profesión para tu avatar</string>
 </resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/groupProfessions"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RadioButton
+        android:id="@+id/radioButtonFighter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/profession_fighter" />
+
+    <RadioButton
+        android:id="@+id/radioButtonRanger"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/profession_ranger" />
+
+    <RadioButton
+        android:id="@+id/radioButtonWizard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/profession_wizard" />
+
+    <RadioButton
+        android:id="@+id/radioButtonMiner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/profession_miner" />
+
+    <RadioButton
+        android:id="@+id/radioButtonSmithy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/profession_smithy" />
+</RadioGroup>

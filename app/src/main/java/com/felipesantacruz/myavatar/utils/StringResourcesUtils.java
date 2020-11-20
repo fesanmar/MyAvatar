@@ -4,6 +4,9 @@ import android.app.Application;
 import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.util.DisplayMetrics;
+import android.view.View;
+import android.widget.RadioButton;
+import android.widget.TextView;
 
 import com.felipesantacruz.myavatar.App;
 
