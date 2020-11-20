@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity implements AvatarBuilderClie
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         avatarBuilder = new Avatar.Builder();
+        avatarBuilder.addSubscriber(this);
         imageAvatar = findViewById(R.id.imageAvatar);
         floatingActionButton = findViewById(R.id.floatingActionButton);
         floatingActionButton.setOnClickListener(v -> {

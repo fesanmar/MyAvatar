@@ -20,4 +20,6 @@
     <string name="dialog_name_title">Introduce un nombre</string>
     <string name="name_hint">Name</string>
     <string name="name_empty_error_message">Introduce un nombre válido</string>
+    <string name="dialog_gender_title">Elige el sexo</string>
+    <string name="gender_empty_error_message">Por favor, selecciona un sexo para tu avatar</string>
 </resources>

@@ -42,5 +42,7 @@ public class DialogName extends AvatarDialogTemplate {
     private void fillAndGoNext(String name) {
         getAvatarBuilder().withName(name);
         getAlertDialog().dismiss();
+        AvatarDialogTemplate dialogGender = new DialogGender(getAvatarBuilder());
+        dialogGender.show(getActivity().getSupportFragmentManager(), getString(R.string.dialog_gender_title));
     }
 }

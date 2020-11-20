@@ -19,4 +19,6 @@
     <string name="dialog_name_title">Type a name</string>
     <string name="name_hint">Name</string>
     <string name="name_empty_error_message">You should enter a valid name</string>
+    <string name="dialog_gender_title">Choose gender</string>
+    <string name="gender_empty_error_message">Please choose gender for your avatar</string>
 </resources>
