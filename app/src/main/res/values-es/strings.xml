@@ -26,4 +26,7 @@
     <string name="race_empty_error_message">Por favor, selecciona la especie de tu avatar</string>
     <string name="dialog_profession_title">Elige una profesión</string>
     <string name="profession_empty_error_message">Por favor, selecciona una profesión para tu avatar</string>
+
+    <string name="create_new_avatar">¡Crea un nuevo avatar!</string>
+    <string name="stats">💪 %d  💗 %d  ✨ %d  ⚡ %d</string>
 </resources>

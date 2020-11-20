@@ -18,6 +18,10 @@ public class Avatar {
         this.profession = profession;
     }
 
+    public String getName() {
+        return name;
+    }
+
     public String getImageName() {
         return String.format("%s_%s_%s",
                 race.getName(), gender, profession.getName());

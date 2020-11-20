@@ -1,13 +1,11 @@
 package com.felipesantacruz.myavatar.dialogs;
 
 import android.view.View;
-import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
 import com.felipesantacruz.myavatar.R;
 import com.felipesantacruz.myavatar.avatar.Avatar;
 import com.felipesantacruz.myavatar.avatar.Race;
-import com.felipesantacruz.myavatar.utils.StringResourcesUtils;
 
 public class DialogRace extends AvatarDialogTemplate {
     private RadioGroup groupRace;

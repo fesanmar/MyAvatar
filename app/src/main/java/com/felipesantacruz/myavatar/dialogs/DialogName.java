@@ -2,7 +2,6 @@ package com.felipesantacruz.myavatar.dialogs;
 
 import android.view.View;
 import android.widget.EditText;
-import android.widget.Toast;
 
 import com.felipesantacruz.myavatar.R;
 import com.felipesantacruz.myavatar.avatar.Avatar;
