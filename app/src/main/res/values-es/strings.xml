@@ -22,4 +22,6 @@
     <string name="name_empty_error_message">Introduce un nombre válido</string>
     <string name="dialog_gender_title">Elige el sexo</string>
     <string name="gender_empty_error_message">Por favor, selecciona un sexo para tu avatar</string>
+    <string name="dialog_race_title">Selecciona una especie</string>
+    <string name="race_empty_error_message">Por favor, selecciona la especie de tu avatar</string>
 </resources>

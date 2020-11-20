@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/groupRaces"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RadioButton
+        android:id="@+id/radioButtonHuman"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/race_human" />
+
+    <RadioButton
+        android:id="@+id/radioButtonElf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/race_elf" />
+
+    <RadioButton
+        android:id="@+id/radioButtonHobbit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/race_hobbit" />
+
+    <RadioButton
+        android:id="@+id/radioButtonDwarf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/race_dwarf" />
+</RadioGroup>

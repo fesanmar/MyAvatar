@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -17,7 +18,7 @@ import com.felipesantacruz.myavatar.R;
 import com.felipesantacruz.myavatar.avatar.Avatar;
 
 public abstract class AvatarDialogTemplate extends DialogFragment implements View.OnClickListener {
-    private Avatar.Builder avatarBuilder;
+    private final Avatar.Builder avatarBuilder;
     private Activity activity;
     private int positiveButtonId;
     private AlertDialog dialog;
@@ -49,8 +50,7 @@ public abstract class AvatarDialogTemplate extends DialogFragment implements Vie
 
     private View createDialogView() {
         LayoutInflater inflater = activity.getLayoutInflater();
-        View thisView = inflater.inflate(getDialogLayoutToInflate(), null);
-        return thisView;
+        return inflater.inflate(getDialogLayoutToInflate(), null);
     }
 
     protected abstract void initializeInnerViews(View thisView);
@@ -92,4 +92,8 @@ public abstract class AvatarDialogTemplate extends DialogFragment implements Vie
     }
 
     protected abstract void onPositiveButtonClick();
+
+    protected void displayToastWithText(String text) {
+        Toast.makeText(getContext(), text, Toast.LENGTH_SHORT).show();
+    }
 }

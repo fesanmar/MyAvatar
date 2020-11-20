@@ -21,4 +21,6 @@
     <string name="name_empty_error_message">You should enter a valid name</string>
     <string name="dialog_gender_title">Choose gender</string>
     <string name="gender_empty_error_message">Please choose gender for your avatar</string>
+    <string name="dialog_race_title">Choose a race</string>
+    <string name="race_empty_error_message">Please choose a race for your avatar</string>
 </resources>

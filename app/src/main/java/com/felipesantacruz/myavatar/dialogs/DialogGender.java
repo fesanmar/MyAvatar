@@ -2,7 +2,6 @@ package com.felipesantacruz.myavatar.dialogs;
 
 import android.view.View;
 import android.widget.RadioGroup;
-import android.widget.Toast;
 
 import com.felipesantacruz.myavatar.R;
 import com.felipesantacruz.myavatar.avatar.Avatar;
@@ -34,21 +33,23 @@ public class DialogGender extends AvatarDialogTemplate {
     protected void onPositiveButtonClick() {
         int selectionId = groupGender.getCheckedRadioButtonId();
         if (isValid(selectionId))
-            buildGenderAndGoNext(selectionId);
+            setGenderAndGoNext(selectionId);
         else
-            Toast.makeText(getContext(), getString(R.string.gender_empty_error_message), Toast.LENGTH_SHORT).show();
+            displayToastWithText(getString(R.string.gender_empty_error_message));
     }
 
     private boolean isValid(int selectionId) {
         return selectionId != -1;
     }
 
-    private void buildGenderAndGoNext(int selectedRadioButtonId) {
+    private void setGenderAndGoNext(int selectedRadioButtonId) {
         if (isMale(selectedRadioButtonId))
             getAvatarBuilder().male();
         else
             getAvatarBuilder().female();
         getAlertDialog().dismiss();
+        AvatarDialogTemplate dialogRace = new DialogRace(getAvatarBuilder());
+        dialogRace.show(getActivity().getSupportFragmentManager(), getString(R.string.dialog_race_title));
     }
 
     private boolean isMale(int selectedRadioButtonId) {

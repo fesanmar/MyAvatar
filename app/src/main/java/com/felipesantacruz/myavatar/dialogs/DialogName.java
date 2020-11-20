@@ -36,7 +36,7 @@ public class DialogName extends AvatarDialogTemplate {
         if (!name.isEmpty())
             fillAndGoNext(name);
         else
-            Toast.makeText(getContext(), getString(R.string.name_empty_error_message), Toast.LENGTH_SHORT).show();
+            displayToastWithText(getString(R.string.name_empty_error_message));
     }
 
     private void fillAndGoNext(String name) {
