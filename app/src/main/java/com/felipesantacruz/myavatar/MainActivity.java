@@ -1,6 +1,7 @@
 package com.felipesantacruz.myavatar;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -31,13 +32,12 @@ public class MainActivity extends AppCompatActivity implements AvatarBuilderClie
         avatarBuilder.addSubscriber(this);
         imageAvatar = findViewById(R.id.imageAvatar);
         FloatingActionButton floatingActionButton = findViewById(R.id.floatingActionButton);
-        floatingActionButton.setOnClickListener(v -> showFirstAvatarDialog());
+        floatingActionButton.setOnClickListener(this::showFirstAvatarDialog);
 
     }
 
-    private void showFirstAvatarDialog() {
+    private void showFirstAvatarDialog(View view) {
         DialogName dialogName = new DialogName(avatarBuilder);
-        dialogName.setCancelable(false);
         dialogName.show(getSupportFragmentManager(), getString(R.string.dialog_name_title));
     }
 
@@ -53,7 +53,11 @@ public class MainActivity extends AppCompatActivity implements AvatarBuilderClie
     }
 
     private void displayNewAvatar(int myDrawableId) {
-        textViewStats.setText(getString(R.string.stats, 100, 10, 20, 5));
+        textViewStats.setText(getString(R.string.stats,
+                avatar.getLifePoints(),
+                avatar.getManaPoints(),
+                avatar.getStrengthPoints(),
+                avatar.getSpeedPoints()));
         imageAvatar.setImageResource(myDrawableId);
         textViewName.setText(avatar.getName());
         textViewMonitor.setText("");

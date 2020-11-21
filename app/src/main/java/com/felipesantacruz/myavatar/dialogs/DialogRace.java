@@ -7,7 +7,7 @@ import com.felipesantacruz.myavatar.R;
 import com.felipesantacruz.myavatar.avatar.Avatar;
 import com.felipesantacruz.myavatar.avatar.Race;
 
-public class DialogRace extends AvatarDialogTemplate {
+public class DialogRace extends AbstractAvatarDialog {
     private RadioGroup groupRace;
 
     public DialogRace(Avatar.Builder avatarBuilder) {
@@ -47,7 +47,7 @@ public class DialogRace extends AvatarDialogTemplate {
         getAvatarBuilder()
                 .withRace(new Race(getRaceResourceId(raceSelectionId)));
         getAlertDialog().dismiss();
-        AvatarDialogTemplate dialogProfession = new DialogProfession(getAvatarBuilder());
+        AbstractAvatarDialog dialogProfession = new DialogProfession(getAvatarBuilder());
         dialogProfession.show(
                 getActivity().getSupportFragmentManager(),
                 getString(R.string.dialog_profession_title));

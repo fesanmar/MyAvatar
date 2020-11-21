@@ -7,7 +7,7 @@ import com.felipesantacruz.myavatar.R;
 import com.felipesantacruz.myavatar.avatar.Avatar;
 import com.felipesantacruz.myavatar.avatar.Profession;
 
-public class DialogProfession extends AvatarDialogTemplate {
+public class DialogProfession extends AbstractAvatarDialog {
 
     private RadioGroup groupProfessions;
 

@@ -17,14 +17,15 @@ import androidx.fragment.app.DialogFragment;
 import com.felipesantacruz.myavatar.R;
 import com.felipesantacruz.myavatar.avatar.Avatar;
 
-public abstract class AvatarDialogTemplate extends DialogFragment implements View.OnClickListener {
+public abstract class AbstractAvatarDialog extends DialogFragment implements View.OnClickListener {
     private final Avatar.Builder avatarBuilder;
     private Activity activity;
     private int positiveButtonId;
     private AlertDialog dialog;
 
-    public AvatarDialogTemplate(Avatar.Builder avatarBuilder) {
+    public AbstractAvatarDialog(Avatar.Builder avatarBuilder) {
         this.avatarBuilder = avatarBuilder;
+        setCancelable(false);
     }
 
     protected Avatar.Builder getAvatarBuilder() {

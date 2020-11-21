@@ -28,5 +28,5 @@
 
     <string name="create_new_avatar">Create a new avatar!</string>
     
-    <string name="stats">💪 %d  💗 %d  ✨ %d  ⚡ %d</string>
+    <string name="stats"> 💗%d   ✨%d   💪%d  ⚡%d</string>
 </resources>

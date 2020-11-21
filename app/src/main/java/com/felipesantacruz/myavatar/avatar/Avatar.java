@@ -1,21 +1,38 @@
 package com.felipesantacruz.myavatar.avatar;
 
-import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashSet;
+import java.util.Random;
 
 public class Avatar {
+    public static final int MAX_LIFE_POINTS = 100;
+    public static final int MAX_MANA_POINTS = 10;
+    public static final int MAX_STRENGTH_POINTS = 20;
+    public static final int MAX_SPEED_POINTS = 5;
 
     private final String name;
     private final String gender;
     private final Race race;
     private final Profession profession;
+    private final Random random = new Random();
+    private final int lifePoints;
+    private final int manaPoints;
+    private final int strengthPoints;
+    private final int speedPoints;
 
     private Avatar(String name, String gender, Race race, Profession profession) {
         this.name = name;
         this.gender = gender;
         this.race = race;
         this.profession = profession;
+        lifePoints = getRandomFromZeroTo(MAX_LIFE_POINTS);
+        manaPoints = getRandomFromZeroTo(MAX_MANA_POINTS);
+        strengthPoints = getRandomFromZeroTo(MAX_STRENGTH_POINTS);
+        speedPoints = getRandomFromZeroTo(MAX_SPEED_POINTS);
+    }
+
+    public int getRandomFromZeroTo(int include) {
+        return random.nextInt(include + 1);
     }
 
     public String getName() {
@@ -27,12 +44,28 @@ public class Avatar {
                 race.getName(), gender, profession.getName());
     }
 
+    public int getLifePoints() {
+        return lifePoints;
+    }
+
+    public int getManaPoints() {
+        return manaPoints;
+    }
+
+    public int getStrengthPoints() {
+        return strengthPoints;
+    }
+
+    public int getSpeedPoints() {
+        return speedPoints;
+    }
+
     public static class Builder implements AvatarBuilderPublisher {
         private String name;
         private String gender;
         private Race race;
         private Profession profession;
-        private Collection<AvatarBuilderClient> subscribers = new HashSet<>();
+        private final Collection<AvatarBuilderClient> subscribers = new HashSet<>();
         private Avatar avatar;
 
         public Builder withName(String name) {

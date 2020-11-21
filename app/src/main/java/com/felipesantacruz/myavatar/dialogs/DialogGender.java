@@ -6,7 +6,7 @@ import android.widget.RadioGroup;
 import com.felipesantacruz.myavatar.R;
 import com.felipesantacruz.myavatar.avatar.Avatar;
 
-public class DialogGender extends AvatarDialogTemplate {
+public class DialogGender extends AbstractAvatarDialog {
 
     private RadioGroup groupGender;
 
@@ -48,7 +48,7 @@ public class DialogGender extends AvatarDialogTemplate {
         else
             getAvatarBuilder().female();
         getAlertDialog().dismiss();
-        AvatarDialogTemplate dialogRace = new DialogRace(getAvatarBuilder());
+        AbstractAvatarDialog dialogRace = new DialogRace(getAvatarBuilder());
         dialogRace.show(getActivity().getSupportFragmentManager(), getString(R.string.dialog_race_title));
     }
 

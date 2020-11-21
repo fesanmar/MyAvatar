@@ -6,7 +6,7 @@ import android.widget.EditText;
 import com.felipesantacruz.myavatar.R;
 import com.felipesantacruz.myavatar.avatar.Avatar;
 
-public class DialogName extends AvatarDialogTemplate {
+public class DialogName extends AbstractAvatarDialog {
 
     private EditText editTextName;
 
@@ -41,7 +41,7 @@ public class DialogName extends AvatarDialogTemplate {
     private void fillAndGoNext(String name) {
         getAvatarBuilder().withName(name);
         getAlertDialog().dismiss();
-        AvatarDialogTemplate dialogGender = new DialogGender(getAvatarBuilder());
+        AbstractAvatarDialog dialogGender = new DialogGender(getAvatarBuilder());
         dialogGender.show(getActivity().getSupportFragmentManager(), getString(R.string.dialog_gender_title));
     }
 }
