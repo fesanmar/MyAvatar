@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity implements AvatarBuilderClie
                 avatar.getSpeedPoints()));
         imageAvatar.setImageResource(myDrawableId);
         textViewName.setText(avatar.getName());
-        textViewMonitor.setText("");
+        textViewMonitor.setText(getString(R.string.enjoy_tour_avatar));
     }
 
     private void setInitialState() {

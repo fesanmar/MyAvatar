@@ -27,6 +27,7 @@
     <string name="profession_empty_error_message">Please choose a profession for your avatar</string>
 
     <string name="create_new_avatar">Create a new avatar!</string>
+    <string name="enjoy_tour_avatar">Enjoy your avatar!</string>
     
-    <string name="stats"> 💗%d   ✨%d   💪%d  ⚡%d</string>
+    <string name="stats">💗%d   ✨%d   💪%d   ⚡%d</string>
 </resources>

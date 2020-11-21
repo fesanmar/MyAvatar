@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- @style/Widget.MaterialComponents.TextView -->
+    <style name="AvatarInfoText" parent="MaterialAlertDialog.MaterialComponents.Title.Text">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:fontFamily">@font/almendra_sc</item>
+        <item name="android:textColor">@color/primary_text</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+    <style name="AvatarInfoText.InfoActionText">
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:textSize">25dp</item>
+    </style>
+    <style name="AvatarImage" parent="Widget.MaterialComponents.CardView">
+        <item name="android:background">@color/primary_light</item>
+        <item name="android:padding">1dp</item>
+    </style>
+</resources>
