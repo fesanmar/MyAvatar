@@ -43,12 +43,13 @@ public class DialogGender extends AbstractAvatarDialog {
     }
 
     private void setGenderAndGoNext(int selectedRadioButtonId) {
+        Avatar.Builder builder = getAvatarBuilder();
         if (isMale(selectedRadioButtonId))
-            getAvatarBuilder().male();
+            builder.male();
         else
-            getAvatarBuilder().female();
+            builder.female();
         getAlertDialog().dismiss();
-        AbstractAvatarDialog dialogRace = new DialogRace(getAvatarBuilder());
+        AbstractAvatarDialog dialogRace = new DialogRace(builder);
         dialogRace.show(getActivity().getSupportFragmentManager(), getString(R.string.dialog_race_title));
     }
 

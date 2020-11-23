@@ -14,8 +14,4 @@ public class Profession {
     public String getName() {
         return name;
     }
-
-    public int getResourceId() {
-        return resourceId;
-    }
 }

@@ -43,11 +43,10 @@ public class DialogRace extends AbstractAvatarDialog {
     }
 
     private void setRaceAndGoNext(int raceSelectionId) {
-
-        getAvatarBuilder()
+        Avatar.Builder builder = getAvatarBuilder()
                 .withRace(new Race(getRaceResourceId(raceSelectionId)));
         getAlertDialog().dismiss();
-        AbstractAvatarDialog dialogProfession = new DialogProfession(getAvatarBuilder());
+        AbstractAvatarDialog dialogProfession = new DialogProfession(builder);
         dialogProfession.show(
                 getActivity().getSupportFragmentManager(),
                 getString(R.string.dialog_profession_title));

@@ -39,9 +39,9 @@ public class DialogName extends AbstractAvatarDialog {
     }
 
     private void fillAndGoNext(String name) {
-        getAvatarBuilder().withName(name);
+        Avatar.Builder builder = getAvatarBuilder().withName(name);
         getAlertDialog().dismiss();
-        AbstractAvatarDialog dialogGender = new DialogGender(getAvatarBuilder());
+        AbstractAvatarDialog dialogGender = new DialogGender(builder);
         dialogGender.show(getActivity().getSupportFragmentManager(), getString(R.string.dialog_gender_title));
     }
 }

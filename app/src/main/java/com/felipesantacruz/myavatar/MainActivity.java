@@ -25,6 +25,10 @@ public class MainActivity extends AppCompatActivity implements AvatarBuilderClie
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        initializeViewFields();
+    }
+
+    private void initializeViewFields() {
         textViewStats = findViewById(R.id.textViewStats);
         textViewName = findViewById(R.id.textViewName);
         textViewMonitor = findViewById(R.id.textViewMonitor);
@@ -33,7 +37,6 @@ public class MainActivity extends AppCompatActivity implements AvatarBuilderClie
         imageAvatar = findViewById(R.id.imageAvatar);
         FloatingActionButton floatingActionButton = findViewById(R.id.floatingActionButton);
         floatingActionButton.setOnClickListener(this::showFirstAvatarDialog);
-
     }
 
     private void showFirstAvatarDialog(View view) {

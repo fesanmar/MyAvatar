@@ -39,6 +39,10 @@ public class DialogProfession extends AbstractAvatarDialog {
             displayToastWithText(getString(R.string.profession_empty_error_message));
     }
 
+    private boolean isValid(int selectionId) {
+        return selectionId != -1;
+    }
+
     private void setProfessionAndBuild(int selectionId) {
         getAvatarBuilder()
                 .withProfession(new Profession(getProfessionResourceId(selectionId)))
@@ -60,9 +64,6 @@ public class DialogProfession extends AbstractAvatarDialog {
         return 0;
     }
 
-    private boolean isValid(int selectionId) {
-        return selectionId != -1;
-    }
 
 
 }

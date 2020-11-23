@@ -25,13 +25,13 @@ public class Avatar {
         this.gender = gender;
         this.race = race;
         this.profession = profession;
-        lifePoints = getRandomFromZeroTo(MAX_LIFE_POINTS);
-        manaPoints = getRandomFromZeroTo(MAX_MANA_POINTS);
-        strengthPoints = getRandomFromZeroTo(MAX_STRENGTH_POINTS);
-        speedPoints = getRandomFromZeroTo(MAX_SPEED_POINTS);
+        lifePoints = getRandomIntFromZeroTo(MAX_LIFE_POINTS);
+        manaPoints = getRandomIntFromZeroTo(MAX_MANA_POINTS);
+        strengthPoints = getRandomIntFromZeroTo(MAX_STRENGTH_POINTS);
+        speedPoints = getRandomIntFromZeroTo(MAX_SPEED_POINTS);
     }
 
-    public int getRandomFromZeroTo(int include) {
+    public int getRandomIntFromZeroTo(int include) {
         return random.nextInt(include + 1);
     }
 
